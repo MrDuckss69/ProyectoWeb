@@ -1,0 +1,71 @@
+/* style.css */
+
+/* Fondo y colores principales */
+body {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #ffffff; /* Texto en blanco */
+}
+
+/* Estilo para las barras de navegación */
+.navbar {
+    background-color: #212529; /* Fondo más oscuro */
+}
+
+.nav-link {
+    color: #ffffff !important; /* Texto blanco */
+}
+
+.nav-link:hover {
+    color: #adb5bd !important; /* Color gris claro al hacer hover */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important; /* Texto blanco */
+}
+
+.navbar-brand:hover {
+    color: #adb5bd !important; /* Color gris claro al hacer hover */
+}
+
+/* Ajustes del formulario de búsqueda */
+.form-control {
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.btn-outline-success {
+    border-color: #28a745; /* Borde verde */
+    color: #28a745; /* Texto verde */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745; /* Fondo verde al hacer hover */
+    color: white;
+}
+
+/* Ajustes para la imagen */
+.img-fluid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la barra de navegación secundaria */
+.nav-item a {
+    font-size: 1.1em;
+    color: #ffffff; /* Texto blanco para los enlaces de la navbar secundaria */
+}
+
+.nav-item a:hover {
+    color: #007bff; /* Color azul al hacer hover */
+}
+
+.nav-item a.disabled {
+    color: #6c757d; /* Color gris para los enlaces deshabilitados */
+}
+
+footer {
+    background-color: #070808;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
