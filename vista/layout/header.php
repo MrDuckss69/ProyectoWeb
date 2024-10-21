@@ -32,28 +32,30 @@
                 </div>
             </div>
         </nav>
+        <!-- Imagen -->
         <nav>
             <img src="https://i.imgur.com/vmoBtSz.jpeg" alt="" class="img-fluid mx-auto d-block" style="width: 2000px; height: 300px;">
         </nav>
+        <!-- Navegación -->
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="paquetes.php">Paquetes</a>
+                    <a class="nav-link" href="index.php?i=paquetes">Paquetes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="vuelos.php">Vuelos</a>
+                    <a class="nav-link" href="index.php?i=vuelos">Vuelos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="promociones.php">Promociones</a>
+                    <a class="nav-link" href="index.php?i=promociones">Promociones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="hoteles.php">Hoteles</a>
+                    <a class="nav-link" href="index.php?i=hoteles">Hoteles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="alquilerdesitio.php">Alquiler de sitio</a>
+                    <a class="nav-link" href="index.php?i=alquilerdesitio">Alquiler de sitio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="ayuda.php">Ayuda</a>
+                    <a class="nav-link" href="index.php?i=ayuda">Ayuda</a>
                 </li>
             </ul>
         </nav>
