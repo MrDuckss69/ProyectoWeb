@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/XmBBd4g.jpeg" class="card-img-top" alt="Hotel en París">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/36/f4/dd/photo0jpg.jpg?w=900&h=-1&s=1" class="card-img-top" alt="Hotel en París">
                     <div class="card-body">
                         <h5 class="card-title">Hotel en París</h5>
                         <p class="card-text">Desde $120 por noche. Disfruta de una estancia en el corazón de la ciudad del amor.</p>
@@ -74,7 +74,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/ZgDCW2y.jpeg" class="card-img-top" alt="Hotel en Nueva York">
+                    <img src="https://th.bing.com/th/id/R.40ed2fbfe246d60d2b92d4c470873b29?rik=4rnTzbEACksz8w&riu=http%3a%2f%2fwww.extravaganzi.com%2fwp-content%2fuploads%2f2012%2f02%2fThe-Plaza-Hotel-New-York.jpg&ehk=avBkKpBg%2bKFf49g%2bQQdwkRyiM2BekaMPSvo31t2IPIc%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Hotel en Nueva York">
                     <div class="card-body">
                         <h5 class="card-title">Hotel en Nueva York</h5>
                         <p class="card-text">Desde $150 por noche. Experimenta la vida vibrante de Nueva York a solo pasos de Times Square.</p>
@@ -84,7 +84,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/O1A2o3u.jpeg" class="card-img-top" alt="Hotel en Cancún">
+                    <img src="https://cache.marriott.com/marriottassets/marriott/CUNLI/cunli-exterior-2363-hor-clsc.jpg" class="card-img-top" alt="Hotel en Cancún">
                     <div class="card-body">
                         <h5 class="card-title">Hotel en Cancún</h5>
                         <p class="card-text">Desde $200 por noche. Relájate en un resort todo incluido en la hermosa playa de Cancún.</p>

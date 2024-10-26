@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/0aKXp4V.jpeg" class="card-img-top" alt="Promoción 1">
+                    <img src="https://krakow.wiki/wp-content/uploads/2021/09/top-10-tourist-attractions-in-europe.jpg" class="card-img-top" alt="Promoción 1">
                     <div class="card-body">
                         <h5 class="card-title">20% de Descuento en Viajes a Europa</h5>
                         <p class="card-text">Reserva tu paquete a cualquier destino en Europa y obtén un 20% de descuento. Oferta válida hasta el 30 de noviembre.</p>
@@ -19,7 +19,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/XfhUOTm.jpeg" class="card-img-top" alt="Promoción 2">
+                    <img src="https://a.cdn-hotels.com/gdcs/production194/d591/59c1a244-0303-45e5-9035-a5100c581829.jpg" class="card-img-top" alt="Promoción 2">
                     <div class="card-body">
                         <h5 class="card-title">Escapada a la Playa: 3x2</h5>
                         <p class="card-text">Reserva 2 noches en cualquier hotel de playa y obtén la tercera noche gratis. ¡Perfecto para relajarte!</p>
@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/fc2lZQu.jpeg" class="card-img-top" alt="Promoción 3">
+                    <img src="https://ktla.com/wp-content/uploads/sites/4/2023/01/Disney-100-castle.jpg?w=1731&h=986&crop=1" class="card-img-top" alt="Promoción 3">
                     <div class="card-body">
                         <h5 class="card-title">Paquete Familiar a Disney: 15% de Descuento</h5>
                         <p class="card-text">Disfruta de una experiencia mágica en Disney y ahorra un 15% en tu paquete familiar. Oferta válida hasta el 15 de diciembre.</p>

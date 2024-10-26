@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/EU0bd55.jpeg" class="card-img-top" alt="Salón de Eventos">
+                    <img src="https://th.bing.com/th/id/R.40c67171da1a595384fe8506d687ff78?rik=rCto8VWhJyg7Zg&pid=ImgRaw&r=0" class="card-img-top" alt="Salón de Eventos">
                     <div class="card-body">
                         <h5 class="card-title">Salón de Eventos en el Centro</h5>
                         <p class="card-text">Ideal para bodas y eventos corporativos. Capacidad para 150 personas.</p>
@@ -71,7 +71,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/OpdV9u5.jpeg" class="card-img-top" alt="Jardín">
+                    <img src="https://th.bing.com/th/id/OIP.5k5YVXUudOlsI2tnM0eGiwHaFP?rs=1&pid=ImgDetMain" class="card-img-top" alt="Jardín">
                     <div class="card-body">
                         <h5 class="card-title">Jardín al Aire Libre</h5>
                         <p class="card-text">Perfecto para ceremonias y fiestas al aire libre. Capacidad para 100 personas.</p>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/XdoB0pU.jpeg" class="card-img-top" alt="Casa de Campo">
+                    <img src="https://www.elmueble.com/medio/2018/08/09/casa-de-campo-del-norte-con-mesa-y-sillas-bajo-los-arboles_c079470a_2000x1332.jpg" class="card-img-top" alt="Casa de Campo">
                     <div class="card-body">
                         <h5 class="card-title">Casa de Campo</h5>
                         <p class="card-text">Ideal para retiros y reuniones familiares. Capacidad para 20 personas.</p>
