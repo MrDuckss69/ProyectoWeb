@@ -56,7 +56,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/8g3t1G6.jpeg" class="card-img-top" alt="Vuelo a Nueva York">
+                    <img src="https://media.architecturaldigest.com/photos/5cdadfa704c41e74349a8438/master/pass/GettyImages-931933966.jpg" class="card-img-top" alt="Vuelo a Nueva York">
                     <div class="card-body">
                         <h5 class="card-title">Vuelo a Nueva York</h5>
                         <p class="card-text">Desde $499. Aprovecha nuestra oferta limitada para viajar a la ciudad que nunca duerme.</p>
@@ -66,7 +66,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/qjX3kYb.jpeg" class="card-img-top" alt="Vuelo a Cancún">
+                    <img src="https://th.bing.com/th/id/R.4dfcbb60fbc9dc09501c9cc162a646f7?rik=k%2blngBfZn7CVbg&pid=ImgRaw&r=0" class="card-img-top" alt="Vuelo a Cancún">
                     <div class="card-body">
                         <h5 class="card-title">Vuelo a Cancún</h5>
                         <p class="card-text">Desde $399. Disfruta del sol y la playa en uno de los destinos más populares de México.</p>
@@ -76,7 +76,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://i.imgur.com/f0Qkq2X.jpeg" class="card-img-top" alt="Vuelo a Londres">
+                    <img src="https://th.bing.com/th/id/R.617a5a325192dad7671e8176527e7997?rik=5FVcLFKWaNmRIA&pid=ImgRaw&r=0" class="card-img-top" alt="Vuelo a Londres">
                     <div class="card-body">
                         <h5 class="card-title">Vuelo a Londres</h5>
                         <p class="card-text">Desde $599. Visita la capital británica y descubre su rica historia y cultura.</p>
