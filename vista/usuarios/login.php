@@ -25,7 +25,7 @@
                     <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
                 </form>
                 <a href="index.php" class="btn btn-secondary btn-block mt-3">Regresar al Inicio</a>
-                <a href="index.php?i=registro" class="btn btn-info btn-block mt-3">Registrarse</a>
+                <a href="index.php?u=registro" class="btn btn-info btn-block mt-3">Registrarse</a>
             </div>
         </div>
     </div>

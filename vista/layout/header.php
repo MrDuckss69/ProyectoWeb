@@ -19,10 +19,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?i=registro">Registro</a>
+                            <a class="nav-link" href="index.php?u=registro">Registro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?i=login">Login</a>
+                            <a class="nav-link" href="index.php?u=login">Login</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">

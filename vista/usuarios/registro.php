@@ -6,7 +6,6 @@
     <title>Registro</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vista/css/style.css">
-
 </head>
 <body>
     <div class="container mt-5">
@@ -32,9 +31,13 @@
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" class="form-control" id="telefono" name="telefono" required>
             </div>
+            <div class="form-group">
+                <label for="curp">CURP:</label>
+                <input type="text" class="form-control" id="curp" name="curp" required>
+            </div>
             <button type="submit" class="btn btn-primary">Registrarse</button>
             <a href="index.php" class="btn btn-secondary">Regresar al Inicio</a>
-            <a href="index.php?i=login" class="btn btn-info">Ir al Login</a>
+            <a href="index.php?u=login" class="btn btn-info">Ir al Login</a>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
