@@ -1,4 +1,4 @@
-<?php require_once("layout/header.php"); ?>
+<?php require_once('vista/layout/header.php');?>
 <div class="container my-5">
     <h1 class="text-center">Reservas de Hoteles</h1>
     <p class="text-center lead">Encuentra el hotel perfecto para tu estancia en cualquier destino.</p>
@@ -95,4 +95,4 @@
         </div>
     </section>
 </div>
-<?php require_once("layout/footer.php"); ?>
+<?php require_once('vista/layout/footer.php');?>

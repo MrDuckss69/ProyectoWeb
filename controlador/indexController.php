@@ -23,20 +23,8 @@ class IndexController {
         require_once 'vista/paquetes.php';
     }
 
-    public function vuelos() {
-        require_once 'vista/vuelos.php';
-    }
-
     public function promociones() {
         require_once 'vista/promociones.php';
-    }
-
-    public function hoteles() {
-        require_once 'vista/hoteles.php';
-    }
-
-    public function alquilerdesitio() {
-        require_once 'vista/alquilerdesitio.php';
     }
 
     public function ayuda() {

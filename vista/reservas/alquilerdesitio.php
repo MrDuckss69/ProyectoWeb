@@ -1,4 +1,4 @@
-<?php require_once("layout/header.php"); ?>
+<?php require_once('vista/layout/header.php');?>
 <div class="container my-5">
     <h1 class="text-center">Alquiler de Sitios</h1>
     <p class="text-center lead">Encuentra el lugar perfecto para tu evento, ya sea una boda, reunión corporativa o fiesta privada.</p>
@@ -92,4 +92,4 @@
         </div>
     </section>
 </div>
-<?php require_once("layout/footer.php"); ?>
+<?php require_once('vista/layout/footer.php');?>

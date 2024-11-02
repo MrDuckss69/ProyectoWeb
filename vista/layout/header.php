@@ -43,16 +43,16 @@
                     <a class="nav-link" href="index.php?i=paquetes">Paquetes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?i=vuelos">Vuelos</a>
+                    <a class="nav-link" href="index.php?r=mostrarVuelos">Vuelos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?i=promociones">Promociones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?i=hoteles">Hoteles</a>
+                    <a class="nav-link" href="index.php?r=mostrarHoteles">Hoteles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?i=alquilerdesitio">Alquiler de sitio</a>
+                    <a class="nav-link" href="index.php?r=mostrarAlquilerDeSitio">Alquiler de sitio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?i=ayuda">Ayuda</a>

@@ -1,17 +1,25 @@
 <?php
-require_once('controlador/indexController.php');
+require_once("config.php");
+require("controlador/indexController.php");
+require("controlador/ReservasController.php");
 
-$controller = new IndexController();
+$indexController = new IndexController();
+$reservasController = new ReservasController();
 
-if (isset($_GET['i'])) {
-    $action = $_GET['i'];
-    if (method_exists($controller, $action)) {
-        $controller->$action();
-    } else {
-        // Manejar el caso en que la acción no exista
-        echo "Acción no encontrada.";
-    }
-} else {
-    $controller->index();
-}
+if (isset($_GET['r'])):
+    $metodo = $_GET['r'];
+    if (method_exists($reservasController, $metodo)):
+        $reservasController->{$metodo}();
+    endif;
+else:
+    if (isset($_GET['i'])):
+        $metodo = $_GET['i'];
+        if (method_exists($indexController, $metodo)):
+            $indexController->{$metodo}();
+        endif;
+    else:
+        $indexController->index();
+    endif;
+endif; 
+
 ?>
