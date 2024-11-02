@@ -1,4 +1,4 @@
-<?php require_once("layout/header.php"); ?>
+<?php require_once("vista/layout/header.php"); ?>
 <div class="container my-5">
     <h1 class="text-center">Descubre Nuestros Paquetes Exclusivos</h1>
     <p class="text-center lead">Elige entre nuestras ofertas diseñadas para viajeros individuales, familias o aquellos que buscan aventuras en bajera. ¡Explora y reserva hoy mismo!</p>
@@ -127,4 +127,4 @@
         </div>
     </section>
 </div>
-<?php require_once("layout/footer.php"); ?>
+<?php require_once("vista/layout/footer.php"); ?>

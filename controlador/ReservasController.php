@@ -11,7 +11,6 @@ class ReservasController{
     public static function mostrarVuelos(){
         require_once('vista/reservas/vuelos.php');
     }
-    
     public static function mostrarAlquilerDeSitio(){
         require_once('vista/reservas/alquilerdesitio.php');
     }

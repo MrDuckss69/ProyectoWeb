@@ -18,15 +18,6 @@ class IndexController {
     public function login() {
         require_once 'vista/login.php';
     }
-
-    public function paquetes() {
-        require_once 'vista/paquetes.php';
-    }
-
-    public function promociones() {
-        require_once 'vista/promociones.php';
-    }
-
     public function ayuda() {
         require_once 'vista/ayuda.php';
     }

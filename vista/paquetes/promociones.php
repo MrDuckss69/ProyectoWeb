@@ -1,4 +1,4 @@
-<?php require_once("layout/header.php"); ?>
+<?php require_once("vista/layout/header.php"); ?>
 <div class="container my-5">
     <h1 class="text-center">Promociones Especiales</h1>
     <p class="text-center lead">Aprovecha nuestras ofertas exclusivas y haz que tu próxima aventura sea inolvidable.</p>
@@ -46,4 +46,4 @@
         <p class="text-center">¡No te pierdas nuestras increíbles promociones de temporada! Ofrecemos descuentos especiales para las vacaciones de verano, invierno y más. Revisa nuestras redes sociales para mantenerte al día con nuestras últimas ofertas y promociones.</p>
     </section>
 </div>
-<?php require_once("layout/footer.php"); ?>
+<?php require_once("vista/layout/footer.php"); ?>

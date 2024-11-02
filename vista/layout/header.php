@@ -40,13 +40,13 @@
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?i=paquetes">Paquetes</a>
+                    <a class="nav-link" href="index.php?p=mostrarPaquetes">Paquetes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?r=mostrarVuelos">Vuelos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?i=promociones">Promociones</a>
+                    <a class="nav-link" href="index.php?p=mostrarPromos">Promociones</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?r=mostrarHoteles">Hoteles</a>
