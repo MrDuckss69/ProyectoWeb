@@ -1,5 +1,5 @@
 <?php
-require_once '../modelo/reservaModel.php';
+require_once ('../modelo/reservaModel.php');
 
 $reservaModel = new ReservaModel();
 $reserva = null;

@@ -1,5 +1,5 @@
 <?php
-require_once '../modelo/destinoModel.php';
+require_once ('../modelo/destinoModel.php');
 
 $destinoModel = new DestinoModel();
 $destino = null;

@@ -1,7 +1,7 @@
 <?php
-require_once '../modelo/paqueteModel.php';
-require_once '../modelo/reservaModel.php';
-require_once '../modelo/destinoModel.php';
+require_once ('../modelo/paqueteModel.php');
+require_once ('../modelo/reservaModel.php');
+require_once ('../modelo/destinoModel.php');
 
 $paqueteModel = new PaqueteModel();
 $reservaModel = new ReservaModel();

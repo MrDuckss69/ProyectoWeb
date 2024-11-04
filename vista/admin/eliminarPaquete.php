@@ -1,5 +1,5 @@
 <?php
-require_once '../modelo/paqueteModel.php';
+require_once ('../modelo/paqueteModel.php');
 
 $paqueteModel = new PaqueteModel();
 
