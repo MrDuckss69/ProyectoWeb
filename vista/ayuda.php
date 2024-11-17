@@ -57,15 +57,6 @@
         </ul>
     </section>
 
-    <!-- Sección de Recursos Útiles -->
-    <section id="recursos-utiles" class="my-5">
-        <h2 class="text-center mb-4">Recursos Útiles</h2>
-        <p class="text-center">Visita nuestras secciones de promociones, paquetes y destinos para obtener más información sobre nuestras ofertas y servicios.</p>
-        <ul class="list-unstyled text-center">
-            <li><a href="promociones.php">Promociones Especiales</a></li>
-            <li><a href="paquetes.php">Paquetes de Viaje</a></li>
-            <li><a href="#">Guías de Destinos</a></li>
-        </ul>
-    </section>
+    
 </div>
 <?php require_once("layout/footer.php"); ?>

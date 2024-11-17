@@ -1,6 +1,6 @@
 <?php require_once("layout/header.php"); ?>
 <div class="container my-5">
-    <h1 class="text-center">Bienvenido a Tu Próxima Aventura</h1>
+<h1 class="text-center">Bienvenido a Tu Próxima Aventura</h1>
     <p class="text-center lead">Explora los destinos más increíbles del mundo con nosotros. ¡Reserva tu viaje hoy mismo!</p>
 
     <!-- Sección de Destinos Populares -->
@@ -60,40 +60,6 @@
                 <p>Ofrecemos paquetes completos que incluyen transporte, alojamiento y excursiones.</p>
             </div>
         </div>
-    </section>
-
-    <section id="testimonios" class="my-5">
-        <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
-        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-block w-100 text-center">
-                        <p class="lead">"¡Una experiencia inolvidable! Todo fue perfecto desde el inicio hasta el final."</p>
-                        <p>- Juan Pérez, Cliente satisfecho</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-block w-100 text-center">
-                        <p class="lead">"El servicio y la atención fueron de primera categoría. Definitivamente volveré a viajar con ustedes."</p>
-                        <p>- María López, Viaje a París</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-block w-100 text-center">
-                        <p class="lead">"Gracias por organizar nuestras vacaciones familiares. ¡Fue la mejor experiencia de nuestras vidas!"</p>
-                        <p>- Carlos García, Vacaciones en familia</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+    </section> 
 </div>
 <?php require_once("layout/footer.php"); ?>

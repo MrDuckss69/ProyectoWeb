@@ -4,15 +4,21 @@
 body {
     background-color: #343a40; /* Fondo oscuro */
     color: #ffffff; /* Texto en blanco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilo para las barras de navegación */
 .navbar {
     background-color: #212529; /* Fondo más oscuro */
+    padding: 10px 20px;
 }
 
 .nav-link {
     color: #ffffff !important; /* Texto blanco */
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -22,6 +28,7 @@ body {
 .navbar-brand {
     font-weight: bold;
     color: #ffffff !important; /* Texto blanco */
+    font-size: 1.5em;
 }
 
 .navbar-brand:hover {
@@ -31,11 +38,14 @@ body {
 /* Ajustes del formulario de búsqueda */
 .form-control {
     border-radius: 20px; /* Bordes redondeados */
+    border: 1px solid #28a745;
+    padding: 5px 10px;
 }
 
 .btn-outline-success {
     border-color: #28a745; /* Borde verde */
     color: #28a745; /* Texto verde */
+    transition: all 0.3s ease;
 }
 
 .btn-outline-success:hover {
@@ -43,16 +53,18 @@ body {
     color: white;
 }
 
-/* Ajustes para la imagen */
+/* Ajustes para las imágenes */
 .img-fluid {
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 /* Estilo para la barra de navegación secundaria */
 .nav-item a {
     font-size: 1.1em;
     color: #ffffff; /* Texto blanco para los enlaces de la navbar secundaria */
+    transition: color 0.3s ease;
 }
 
 .nav-item a:hover {
@@ -63,9 +75,44 @@ body {
     color: #6c757d; /* Color gris para los enlaces deshabilitados */
 }
 
+/* Estilo para el menú desplegable */
+select {
+    background-color: #212529; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+select:hover, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de envío */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
 footer {
     background-color: #070808;
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
 }

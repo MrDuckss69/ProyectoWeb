@@ -4,11 +4,13 @@ require("controlador/indexController.php");
 require("controlador/ReservasController.php");
 require("controlador/PaquetesController.php");
 require("controlador/UsuariosController.php");
+require("controlador/AdminController.php"); // Incluir el controlador AdminController
 
 $indexController = new IndexController();
 $reservasController = new ReservasController();
-$paquetesController = new PaquetesController(); // Instanciar PaquetesController
-$usuariosController = new UsuariosController(); // Instanciar UsuariosController
+$paquetesController = new PaquetesController();
+$usuariosController = new UsuariosController();
+$adminController = new AdminController(); // Instanciar AdminController
 
 if (isset($_GET['r'])):
     $metodo = $_GET['r'];
@@ -33,9 +35,14 @@ else:
         if (method_exists($usuariosController, $metodo)):
             $usuariosController->{$metodo}();
         endif;
+    endif;
+    if (isset($_GET['a'])): // Nueva ruta para AdminController
+        $metodo = $_GET['a'];
+        if (method_exists($adminController, $metodo)):
+            $adminController->{$metodo}();
+        endif;
     else:
         $indexController->index();
     endif;
 endif; 
-
 ?>

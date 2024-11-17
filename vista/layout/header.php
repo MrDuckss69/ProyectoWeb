@@ -25,11 +25,20 @@
                             <a class="nav-link" href="index.php?u=login">Login</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <form>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?a=clientes">Mi cuenta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?a=empleado">Empleado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?a=admin">Administrador</a>
+                            </li>      
+                        </ul>
                     </form>
-                </div>
+                </div>         
             </div>
         </nav>
         <!-- Imagen -->
