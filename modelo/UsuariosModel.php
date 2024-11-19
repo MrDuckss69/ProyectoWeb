@@ -57,5 +57,25 @@ class UsuariosModel {
             die("Error al validar las credenciales: " . $e->getMessage());
         }
     }
+
+    // Método para obtener todos los usuarios
+    public function obtenerTodosLosUsuarios() {
+        try {
+            $query = $this->db->query("SELECT * FROM usuarios");
+            return $query->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            die("Error al obtener los usuarios: " . $e->getMessage());
+        }
+    }
+
+    // Método para eliminar un usuario por ID
+    public function eliminarUsuario($id) {
+        try {
+            $query = $this->db->prepare("DELETE FROM usuarios WHERE id = :id");
+            $query->execute(['id' => $id]);
+        } catch (PDOException $e) {
+            die("Error al eliminar el usuario: " . $e->getMessage());
+        }
+    }
 }
 ?>
