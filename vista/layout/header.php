@@ -24,6 +24,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?u=login">Login</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?c=paquetes&a=crear">Agregar Paquete</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?c=paquetes&a=listarPaquetes">Ver Paquetes</a> <!-- Enlace añadido -->
+                        </li>
                     </ul>
                     <form>
                         <ul class="nav justify-content-center">

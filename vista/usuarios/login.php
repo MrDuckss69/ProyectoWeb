@@ -13,14 +13,17 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h2 class="text-center mt-5">Login</h2>
+                <!-- Formulario para el inicio de sesión -->
                 <form action="process_login.php" method="POST">
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <label for="correo">Correo Electrónico</label>
+                        <!-- Cambié "email" a "correo" para que coincida con `process_login.php` -->
+                        <input type="email" class="form-control" id="correo" name="correo" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
+                        <label for="contrasena">Contraseña</label>
+                        <!-- Cambié "password" a "contrasena" para que coincida con `process_login.php` -->
+                        <input type="password" class="form-control" id="contrasena" name="contrasena" required>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
                 </form>
