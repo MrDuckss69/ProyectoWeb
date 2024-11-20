@@ -2,7 +2,7 @@
 class RolesController {
     public function miCuenta() {
         // Verificar que el usuario tiene sesión activa y es cliente
-        if (isset($_SESSION['usuario']) && $_SESSION['usuario']['rol'] === 'cliente') {
+        if (isset($_SESSION['usuario']) && strtolower($_SESSION['usuario']['rol']) === 'cliente') {
             require_once("vista/roles/miCuenta.php");
         } else {
             echo "Acceso denegado. Esta sección es solo para clientes.";
@@ -11,7 +11,7 @@ class RolesController {
 
     public function empleado() {
         // Verificar que el usuario tiene sesión activa y es empleado
-        if (isset($_SESSION['usuario']) && $_SESSION['usuario']['rol'] === 'empleado') {
+        if (isset($_SESSION['usuario']) && strtolower($_SESSION['usuario']['rol']) === 'empleado') {
             require_once("modelo/PaquetesModel.php");
             $paquetesModel = new PaquetesModel();
             $paquetes = $paquetesModel->obtenerTodosLosPaquetes(); // Obtener paquetes
@@ -23,7 +23,7 @@ class RolesController {
 
     public function administrador() {
         // Verificar que el usuario tiene sesión activa y es administrador
-        if (isset($_SESSION['usuario']) && $_SESSION['usuario']['rol'] === 'admin') {
+        if (isset($_SESSION['usuario']) && strtolower($_SESSION['usuario']['rol']) === 'admin') {
             require_once("modelo/PaquetesModel.php");
             require_once("modelo/UsuariosModel.php");
             $paquetesModel = new PaquetesModel();

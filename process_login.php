@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 'id' => $usuario['id'],
                 'nombre' => $usuario['nombre'],
                 'email' => $usuario['email'],
-                'rol' => $usuario['rol'] // Agregar rol a la sesión
+                'rol' => strtolower(trim($usuario['rol'])) // Convertir rol a minúsculas y quitar espacios
             ];
 
             // Redirigir según el rol

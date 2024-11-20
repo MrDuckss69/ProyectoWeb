@@ -2,7 +2,9 @@
 
 <div class="container mt-5">
     <h1>Panel del Empleado</h1>
-    <p>Desde aquí puedes gestionar los paquetes de viaje.</p>
+    <p>Gestión de paquetes de viaje:</p>
+
+    <a href="index.php?c=paquetes&a=crear" class="btn btn-success mb-3">Agregar Nuevo Paquete</a>
 
     <table class="table">
         <thead>

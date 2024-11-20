@@ -72,6 +72,8 @@
             <?php endif; ?>
         </tbody>
     </table>
+
+    <a href="index.php?u=logout" class="btn btn-danger">Cerrar Sesión</a>
 </div>
 
 <?php require_once("vista/layout/footer.php"); ?>
