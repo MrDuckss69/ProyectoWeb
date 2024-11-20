@@ -30,10 +30,6 @@
                                 <!-- Enlace al formulario para agregar paquetes -->
                                 <a class="nav-link" href="index.php?ruta=paquetes&metodo=crear">Agregar Paquete</a>
                             </li>
-                            <li class="nav-item">
-                                <!-- Enlace para listar paquetes -->
-                                <a class="nav-link" href="index.php?ruta=paquetes&metodo=listarPaquetes">Ver Paquetes</a>
-                            </li>
                         </ul>
                     </div>
                     <form>

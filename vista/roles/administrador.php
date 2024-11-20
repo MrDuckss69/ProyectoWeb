@@ -5,7 +5,7 @@
 
     <!-- Gestión de Paquetes -->
     <h2>Gestión de Paquetes</h2>
-    <a href="index.php?c=paquetes&a=crear" class="btn btn-success mb-3">Agregar Nuevo Paquete</a>
+    <a href="index.php?ruta=paquetes&metodo=crear" class="btn btn-success mb-3">Agregar Nuevo Paquete</a>
     <table class="table">
         <thead>
             <tr>

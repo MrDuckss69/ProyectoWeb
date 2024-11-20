@@ -9,15 +9,15 @@ class AdminController {
     }
 
     public function clientes() {
-        require_once('vista/admin/clientes.php');
+        require_once('vista/roles/miCuenta.php');
     }
 
     public function empleado() {
-        require_once('vista/admin/empleado.php');
+        require_once('vista/roles/empleado.php');
     }
 
     public function admin() {
-        require_once('vista/admin/admin.php');
+        require_once('vista/roles/administrador.php');
     }
 }
 ?>

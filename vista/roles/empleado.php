@@ -4,7 +4,7 @@
     <h1>Panel del Empleado</h1>
     <p>Gestión de paquetes de viaje:</p>
 
-    <a href="index.php?c=paquetes&a=crear" class="btn btn-success mb-3">Agregar Nuevo Paquete</a>
+    <a href="index.php?ruta=paquetes&metodo=crear" class="btn btn-success mb-3">Agregar Nuevo Paquete</a>
 
     <table class="table">
         <thead>
