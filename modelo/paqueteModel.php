@@ -5,59 +5,73 @@ class PaqueteModel {
     private $db;
 
     public function __construct() {
-        // Inicializa la conexión con la base de datos
         $this->db = Conexion::conectar();
     }
 
-    // Método para obtener todos los paquetes
     public function obtenerPaquetes() {
         try {
             $query = $this->db->query("SELECT * FROM paquetes");
             return $query->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            die("Error al obtener paquetes: " . $e->getMessage());
+            error_log("Error en obtenerPaquetes: " . $e->getMessage());
+            return [];
         }
     }
 
-    // Método para obtener un paquete por ID
     public function obtenerPaquetePorId($id) {
         try {
             $query = $this->db->prepare("SELECT * FROM paquetes WHERE id = :id");
             $query->execute(['id' => $id]);
             return $query->fetch(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            die("Error al obtener el paquete: " . $e->getMessage());
+            error_log("Error en obtenerPaquetePorId: " . $e->getMessage());
+            return null;
         }
     }
 
-    // Método para agregar un nuevo paquete
     public function agregarPaquete($datos) {
         try {
             $query = $this->db->prepare("INSERT INTO paquetes (nombre, descripcion, precio) VALUES (:nombre, :descripcion, :precio)");
-            return $query->execute($datos);
+            return $query->execute([
+                'nombre' => $datos['nombre'],
+                'descripcion' => $datos['descripcion'],
+                'precio' => $datos['precio']
+            ]);
         } catch (PDOException $e) {
-            die("Error al agregar el paquete: " . $e->getMessage());
+            error_log("Error en agregarPaquete: " . $e->getMessage());
+            return false;
         }
     }
 
-    // Método para actualizar un paquete
     public function actualizarPaquete($id, $datos) {
         try {
             $query = $this->db->prepare("UPDATE paquetes SET nombre = :nombre, descripcion = :descripcion, precio = :precio WHERE id = :id");
-            $datos['id'] = $id;
-            return $query->execute($datos);
+            return $query->execute([
+                'id' => $id,
+                'nombre' => $datos['nombre'],
+                'descripcion' => $datos['descripcion'],
+                'precio' => $datos['precio']
+            ]);
         } catch (PDOException $e) {
-            die("Error al actualizar el paquete: " . $e->getMessage());
+            error_log("Error en actualizarPaquete: " . $e->getMessage());
+            return false;
         }
     }
 
-    // Método para eliminar un paquete
     public function eliminarPaquete($id) {
         try {
             $query = $this->db->prepare("DELETE FROM paquetes WHERE id = :id");
-            return $query->execute(['id' => $id]);
+            $result = $query->execute(['id' => $id]);
+
+            if ($result && $query->rowCount() > 0) {
+                return true; // Se eliminó al menos un registro
+            } else {
+                error_log("Error en eliminarPaquete: No se encontró el paquete con ID $id.");
+                return false;
+            }
         } catch (PDOException $e) {
-            die("Error al eliminar el paquete: " . $e->getMessage());
+            error_log("Error en eliminarPaquete: " . $e->getMessage());
+            return false;
         }
     }
 }

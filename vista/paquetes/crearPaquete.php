@@ -5,7 +5,14 @@
 
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <form method="POST" action="index.php?c=paquetes&a=crear">
+            <!-- Mostrar mensaje de error si existe -->
+            <?php if (!empty($error)): ?>
+                <div class="alert alert-danger text-center">
+                    <?= htmlspecialchars($error); ?>
+                </div>
+            <?php endif; ?>
+
+            <form method="POST" action="index.php?ruta=paquetes&metodo=crear" onsubmit="return validarFormulario();">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre del Paquete</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ejemplo: Aventura en los Alpes" required>
@@ -20,10 +27,32 @@
                 </div>
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Guardar Paquete</button>
-                    <a href="index.php?c=paquetes" class="btn btn-secondary">Cancelar</a>
+                    <a href="index.php?ruta=paquetes&metodo=listarPaquetes" class="btn btn-secondary">Cancelar</a>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<script>
+    // Validación básica del formulario en el lado del cliente
+    function validarFormulario() {
+        const nombre = document.getElementById('nombre').value.trim();
+        const descripcion = document.getElementById('descripcion').value.trim();
+        const precio = document.getElementById('precio').value;
+
+        if (nombre === '' || descripcion === '' || precio === '') {
+            alert('Por favor, completa todos los campos.');
+            return false;
+        }
+
+        if (parseFloat(precio) <= 0) {
+            alert('El precio debe ser mayor a 0.');
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
 <?php require_once("vista/layout/footer.php"); ?>

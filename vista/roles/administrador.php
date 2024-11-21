@@ -21,16 +21,16 @@
                     <tr>
                         <td><?= htmlspecialchars($paquete['nombre']); ?></td>
                         <td><?= htmlspecialchars($paquete['descripcion']); ?></td>
-                        <td>$<?= htmlspecialchars($paquete['precio']); ?></td>
+                        <td>$<?= number_format($paquete['precio'], 2); ?></td>
                         <td>
-                            <a href="index.php?c=paquetes&a=editar&id=<?= $paquete['id']; ?>" class="btn btn-warning">Editar</a>
-                            <a href="index.php?c=paquetes&a=eliminar&id=<?= $paquete['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="index.php?ruta=paquetes&metodo=editar&id=<?= $paquete['id']; ?>" class="btn btn-warning">Editar</a>
+                            <a href="index.php?ruta=admin&metodo=eliminarPaquete&id=<?= $paquete['id']; ?>" class="btn btn-danger">Eliminar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="4" class="text-center">No hay paquetes disponibles.</td>
+                    <td colspan="4" class="text-center">No hay paquetes disponibles. <a href="index.php?ruta=paquetes&metodo=crear">Agrega uno aquí</a>.</td>
                 </tr>
             <?php endif; ?>
         </tbody>
@@ -59,15 +59,15 @@
                         <td><?= htmlspecialchars($usuario['email']); ?></td>
                         <td><?= htmlspecialchars($usuario['telefono']); ?></td>
                         <td><?= htmlspecialchars($usuario['curp']); ?></td>
-                        <td><?= htmlspecialchars($usuario['rol']); ?></td>
+                        <td><?= htmlspecialchars(ucfirst($usuario['rol'])); ?></td>
                         <td>
-                            <a href="index.php?u=eliminarUsuario&id=<?= $usuario['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="index.php?ruta=admin&metodo=eliminarUsuario&id=<?= $usuario['id']; ?>" class="btn btn-danger">Eliminar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="7" class="text-center">No hay usuarios registrados.</td>
+                    <td colspan="7" class="text-center">No hay usuarios registrados. Registra uno <a href="index.php?ruta=registro">aquí</a>.</td>
                 </tr>
             <?php endif; ?>
         </tbody>

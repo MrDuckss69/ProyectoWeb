@@ -5,63 +5,95 @@ class PaquetesController {
     private $paqueteModel;
 
     public function __construct() {
-        // Inicializa el modelo de paquetes
         $this->paqueteModel = new PaqueteModel();
     }
 
-    // Método para mostrar la lista de paquetes en la vista principal
     public function index() {
         $paquetes = $this->paqueteModel->obtenerPaquetes();
         require_once('vista/paquetes/paquetes.php');
     }
 
-    // Método para mostrar la lista de promociones
     public function mostrarPromos() {
         require_once('vista/paquetes/promociones.php');
     }
 
-    // Método para mostrar todos los paquetes
     public function listarPaquetes() {
-        $paquetes = $this->paqueteModel->obtenerPaquetes(); // Obtener paquetes desde el modelo
-        require_once('vista/paquetes/listaPaquetes.php'); // Cargar la vista
+        $paquetes = $this->paqueteModel->obtenerPaquetes();
+        require_once('vista/paquetes/listaPaquetes.php');
     }
 
-    // Método para mostrar el formulario de creación
     public function crear() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $datos = [
-                'nombre' => $_POST['nombre'],
-                'descripcion' => $_POST['descripcion'],
-                'precio' => $_POST['precio']
+                'nombre' => $_POST['nombre'] ?? '',
+                'descripcion' => $_POST['descripcion'] ?? '',
+                'precio' => $_POST['precio'] ?? ''
             ];
-            $this->paqueteModel->agregarPaquete($datos);
-            header("Location: index.php?c=paquetes");
+
+            // Validar los datos antes de enviarlos al modelo
+            if (empty($datos['nombre']) || empty($datos['descripcion']) || empty($datos['precio'])) {
+                $error = "Todos los campos son obligatorios.";
+            } elseif (!is_numeric($datos['precio']) || $datos['precio'] <= 0) {
+                $error = "El precio debe ser un número mayor a 0.";
+            } else {
+                // Intentar agregar el paquete al modelo
+                $resultado = $this->paqueteModel->agregarPaquete($datos);
+                if ($resultado) {
+                    header("Location: index.php?ruta=paquetes&metodo=listarPaquetes");
+                    exit;
+                } else {
+                    $error = "Error al guardar el paquete. Inténtelo nuevamente.";
+                }
+            }
         }
+
         require_once('vista/paquetes/crearPaquete.php');
     }
 
-    // Método para editar un paquete
     public function editar() {
-        $id = $_GET['id'];
+        $id = $_GET['id'] ?? null;
+
+        if (!$id) {
+            header("Location: index.php?ruta=paquetes&metodo=listarPaquetes");
+            exit;
+        }
+
         $paquete = $this->paqueteModel->obtenerPaquetePorId($id);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $datos = [
-                'nombre' => $_POST['nombre'],
-                'descripcion' => $_POST['descripcion'],
-                'precio' => $_POST['precio']
+                'nombre' => $_POST['nombre'] ?? '',
+                'descripcion' => $_POST['descripcion'] ?? '',
+                'precio' => $_POST['precio'] ?? ''
             ];
-            $this->paqueteModel->actualizarPaquete($id, $datos);
-            header("Location: index.php?c=paquetes");
+
+            // Validar los datos antes de actualizarlos
+            if (empty($datos['nombre']) || empty($datos['descripcion']) || empty($datos['precio'])) {
+                $error = "Todos los campos son obligatorios.";
+            } elseif (!is_numeric($datos['precio']) || $datos['precio'] <= 0) {
+                $error = "El precio debe ser un número mayor a 0.";
+            } else {
+                $resultado = $this->paqueteModel->actualizarPaquete($id, $datos);
+                if ($resultado) {
+                    header("Location: index.php?ruta=paquetes&metodo=listarPaquetes");
+                    exit;
+                } else {
+                    $error = "Error al actualizar el paquete. Inténtelo nuevamente.";
+                }
+            }
         }
+
         require_once('vista/paquetes/editarPaquete.php');
     }
 
-    // Método para eliminar un paquete
     public function eliminar() {
-        $id = $_GET['id'];
-        $this->paqueteModel->eliminarPaquete($id);
-        header("Location: index.php?c=paquetes");
+        $id = $_GET['id'] ?? null;
+
+        if ($id) {
+            $this->paqueteModel->eliminarPaquete($id);
+        }
+
+        header("Location: index.php?ruta=paquetes&metodo=listarPaquetes");
     }
 }
 ?>
