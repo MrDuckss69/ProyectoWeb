@@ -26,10 +26,6 @@
                                 <!-- Enlace al formulario de login -->
                                 <a class="nav-link" href="index.php?ruta=usuarios&metodo=login">Login</a>
                             </li>
-                            <li class="nav-item">
-                                <!-- Enlace al formulario para agregar paquetes -->
-                                <a class="nav-link" href="index.php?ruta=paquetes&metodo=crear">Agregar Paquete</a>
-                            </li>
                         </ul>
                     </div>
                     <form>
